@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Home</title>
+	<!--/metadata -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //custom-theme -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/JiSlider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome-icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<!-- header -->
+	<div class="banner-top" id="home">
+
+		<div class="w3_navigation">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<img class="navbar-brand" href="index.html" src="images/icon1.png" alt="" />
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<nav class="menu menu--iris">
+							<ul class="nav navbar-nav menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">公司简介</a></li>
+								<li class="menu__item menu__item--current"><a href="shizhuang.html"
+										class="menu__link">时装发布</a></li>
+								<li class="menu__item"><a href="chanpin.html" class="menu__link">产品品类</a></li>
+								<li class="menu__item"><a href="lianxi.html" class="menu__link">合作客户</a></li>
+								<li class="menu__item"><a href="lianxi.html" class="menu__link">官方订阅</a></li>
+								<li class="menu__item"><a href="lianxi.html" class="menu__link">联系我们</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+	<div class="top-xian"><img class="top-xian-img" src="images/xian1.png" /></div>
+	<div class="container">
+		<div class="shizhuang-container">
+			<div class="top-icon"><img class="top-icon-img" src="images/shizhuang0.png" /></div>
+			<div class="shizhuang">
+				<img class="shizhuang-item" src="images/shihuang_icon1.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon2.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon3.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon4.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon5.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon6.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon7.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon8.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon9.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon10.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon11.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon12.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon13.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon14.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon15.jpg" />
+				<img class="shizhuang-item" src="images/shihuang_icon16.jpg" />
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
+	<style>
+		.shizhuang-container {
+			width: 86%;
+			margin: 0 auto;
+			margin-bottom: 100px;
+		}
+		.shizhuang {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.shizhuang-item {
+			width: 46%;
+			object-fit: contain;
+			margin-bottom: 60px;
+		}
+	</style>
+	<!-- js -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script src="js/JiSlider.js"></script>
+		<script>
+			$(window).load(function () {
+				$('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: false}).addClass('ff')
+			})
+		</script> -->
+	<!-- carousal -->
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function () {
+			$(".center").slick({
+				dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+	<!-- //carousal -->
+	<!-- <script src="js/SmoothScroll.min.js"></script> -->
+	<!-- start-smoth-scrolling -->
+	<!-- //for bootstrap working -->
+
+	<!-- start-smooth-scrolling -->
+	<!-- <script type="text/javascript" src="js/move-top.js"></script> -->
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			// $().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+
+
+</body>
+
+</html>
