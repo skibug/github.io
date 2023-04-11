@@ -26,7 +26,7 @@
 
 <body>
 	<!-- header -->
-	<div class="banner-top" id="home" style="height: 68vw;">
+	<div class="banner-top" id="home">
 
 		<div class="w3_navigation">
 			<div class="container">
@@ -39,8 +39,7 @@
 						<nav class="menu menu--iris">
 							<ul class="nav navbar-nav menu__list">
 								<li class="dropdown menu__item">
-									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">公司简介<b
-											class="caret"></b></a>
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">公司简介</a>
 									<ul class="dropdown-menu agile_short_dropdown">
 										<li><a href="chejian.html">- 工厂车间</a></li>
 										<li><a href="gongyi.html">- 工艺设计</a></li>
@@ -55,8 +54,7 @@
 								<li class="menu__item"><a href="chanpin.html" class="menu__link">产品品类</a></li>
 								<li class="menu__item"><a href="index.html#hezuo" class="menu__link">合作客户</a></li>
 								<li class="dropdown menu__item">
-									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">官方订阅<b
-											class="caret"></b></a>
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">官方订阅</a>
 									<ul class="dropdown-menu agile_short_dropdown" style="translate: -93%;">
 										<li><a href="chejian.html">- 工厂车间</a></li>
 										<li><a href="gongyi.html">- 工艺设计</a></li>
@@ -140,7 +138,7 @@
 	</div>
 	<!-- //banner -->
 	<!-- about -->
-	<div class="about" id="about" style="margin-top: 60px; height: 47vw;">
+	<div class="about" id="about" style="margin-top: 60px;">
 		<div class="container">
 			<div class="w3-heading-all">
 				<h3>关于我们</h3>
@@ -169,7 +167,7 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<div class="about" id="fazhan" style="height: 39vw;">
+	<div class="about" id="fazhan">
 		<div class="container">
 			<div class="w3-heading-all" style="margin-bottom: 60px;">
 				<h3>发展历程</h3>
@@ -388,30 +386,30 @@
 
 
 	</div>
-	<div class="about" id="yewu" style="height: 50vw;">
+	<div class="about" id="yewu">
 		<div class="container">
 			<div class="w3-heading-all">
 				<h3>业务品类</h3>
 				<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
 			</div>
 			<div class="fenlei">
-				<a href="chanpin.html"><img class="fenlei1" src="images/fenlei1.jpg" /></a>
+				<a href="chanpin.html#yangrong"><img class="fenlei1" src="images/fenlei1.jpg" /></a>
 				<a href="chanpin.html"><img class="fenlei1" src="images/fenlei2.jpg" /></a>
 				<a href="chanpin.html"><img class="fenlei1" src="images/fenlei3.jpg" /></a>
-				<a href="chanpin.html"><img class="fenlei1 fenlei2" src="images/fenlei4.jpg" /></a>
+				<a href="chanpin.html#shouhui"><img class="fenlei1 fenlei2" src="images/fenlei4.jpg" /></a>
 			</div>
 			<div class="fenlei-more"></div>
 		</div>
 	</div>
-		<div class="about" id="hezuo" name="hezuo">
-			<div class="container">
-				<div class="w3-heading-all">
-					<h3>合作客户</h3>
-					<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
-				</div>
-				<img class="hezuo" src="images/hezhuo1.png" alt="" />
+	<div class="about" id="hezuo" name="hezuo">
+		<div class="container">
+			<div class="w3-heading-all">
+				<h3>合作客户</h3>
+				<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
 			</div>
+			<img class="hezuo" src="images/hezhuo1.png" alt="" />
 		</div>
+	</div>
 	<div class="about" id="qiye">
 		<div class="container">
 			<div class="w3-heading-all">
@@ -650,28 +648,31 @@
 		</script> -->
 	<!-- carousal -->
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-	<!-- <script type="text/javascript">
+	<script type="text/javascript">
 		$(document).on('ready', function () {
-			console.log(1111);
-			let bridge = document.querySelector('#hezuo')
-			let body = document.body;
-			let height = 0;
+			let urlHezuo = location.href.indexOf('#hezuo');
+			if (urlHezuo != "-1") {
+				let bridge = document.querySelector('#hezuo');
+				let body = document.body;
+				let height = 0;
 
-			// 计算该 DOM 节点到 body 顶部距离
-			do {
-				height += bridge.offsetTop;
-				bridge = bridge.offsetParent;
-			} while (bridge !== body)
+				// 计算该 DOM 节点到 body 顶部距离
+				do {
+					height += bridge.offsetTop;
+					bridge = bridge.offsetParent;
+				} while (bridge !== body)
 
-			// 滚动到指定位置
-			window.scrollTo({
-				top: height,
-				behavior: 'smooth'
-			})
-			console.log(height);
+				setTimeout(function () {
+					// 滚动到指定位置
+					window.scrollTo({
+						top: height,
+						behavior: 'smooth'
+					})
+				}, 100);
+			}
 		});
 
-	</script> -->
+	</script>
 	<script type="text/javascript">
 		$(document).on('ready', function () {
 			$(".center").slick({
