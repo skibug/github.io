@@ -1589,7 +1589,7 @@ pre code {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -1603,6 +1603,9 @@ pre code {
   .container {
     width: 1200px;
   }
+} */
+.container {
+  width: 80%;
 }
 .banner-one {
   width: 100%;
@@ -3650,7 +3653,7 @@ tbody.collapse.in {
   margin-bottom: 2px;
 }
 @media (min-width: 768px) {
-  .navbar-right .dropdown-menu {
+  .navbar-right {
     right: 0;
     left: auto;
   }
@@ -4461,7 +4464,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav > li > .dropdown-menu {
-  margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }

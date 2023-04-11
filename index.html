@@ -32,29 +32,41 @@
 			<div class="container">
 				<nav class="navbar navbar-default">
 					<div class="navbar-header navbar-left">
-						<img class="navbar-brand" href="index.html" src="images/icon1.png" alt="" />
+						<a href="index.html"><img class="navbar-brand" src="images/icon1.png" alt="" /></a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 						<nav class="menu menu--iris">
 							<ul class="nav navbar-nav menu__list">
-								<li class="menu__item menu__item--current"><a href="index.html"
-										class="menu__link">公司简介</a></li>
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">公司简介<b
+											class="caret"></b></a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li><a href="chejian.html">- 工厂车间</a></li>
+										<li><a href="gongyi.html">- 工艺设计</a></li>
+										<li><a href="jidi.html">- 原料基地</a></li>
+										<div class="qrcode">
+											<img class="qrcode-img" src="images/qrcode.png" />
+											<a>- 微信扫码订阅</a>
+										</div>
+									</ul>
+								</li>
 								<li class="menu__item"><a href="shizhuang.html" class="menu__link">时装发布</a></li>
 								<li class="menu__item"><a href="chanpin.html" class="menu__link">产品品类</a></li>
-								<!-- <li class="dropdown menu__item">
-								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">合作客户<b class="caret"></b></a>
-								<ul class="dropdown-menu agile_short_dropdown">
-									
-									
-									<li><a href="icons.html">Icons</a></li>
-									<li><a href="typography.html">Typography</a></li>
-									
-									
-								</ul>
-							</li> -->
-								<li class="menu__item"><a href="lianxi.html" class="menu__link">合作客户</a></li>
-								<li class="menu__item"><a href="lianxi.html" class="menu__link">官方订阅</a></li>
+								<li class="menu__item"><a href="index.html#hezuo" class="menu__link">合作客户</a></li>
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">官方订阅<b
+											class="caret"></b></a>
+									<ul class="dropdown-menu agile_short_dropdown" style="translate: -93%;">
+										<li><a href="chejian.html">- 工厂车间</a></li>
+										<li><a href="gongyi.html">- 工艺设计</a></li>
+										<li><a href="jidi.html">- 原料基地</a></li>
+										<div class="qrcode">
+											<img class="qrcode-img" src="images/qrcode.png" />
+											<a>- 微信扫码订阅</a>
+										</div>
+									</ul>
+								</li>
 								<li class="menu__item"><a href="lianxi.html" class="menu__link">联系我们</a></li>
 							</ul>
 						</nav>
@@ -135,6 +147,9 @@
 				<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
 			</div>
 		</div>
+		<div class="about-bg">
+			<img src="images/about_text_bg.png" class="about-bg-img" />
+		</div>
 		<div class="about-grids">
 			<div class="col-md-6 about-right">
 				<p>内蒙古德昇绒毛制品有限责任公司创立于2000年</p>
@@ -145,7 +160,7 @@
 				<p>从原料至成品生产的全套专业设备</p>
 				<p>产品种类涵盖:围巾、披肩、盖毯、针织衫、帽子、手套等</p>
 				<div class="more">
-					<a href="lianxi.html" >查看更多></a>
+					<a href="chejian.html">查看更多></a>
 				</div>
 			</div>
 			<div class="about-left">
@@ -156,221 +171,222 @@
 	</div>
 	<div class="about" id="fazhan">
 		<div class="container">
-			<div class="w3-heading-all">
+			<div class="w3-heading-all" style="margin-bottom: 60px;">
 				<h3>发展历程</h3>
 				<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
 			</div>
 		</div>
-			<!-- Swiper start -->
-			<style>
-				.year-swiper {
-					background-color: #f2f2f2;
-					width: 100%;
-					display: flex;
-					flex-direction: column;
-				}
+		<!-- Swiper start -->
+		<style>
+			.year-swiper {
+				background-color: #f2f2f2;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+			}
 
-				.swiper-hz {
-					align-self: center;
-				}
-				.swiper-parent {
-					width: 65%;
-					display: flex;
-					flex-direction: row;
-					margin: 0 auto;
-					margin-top: 80px;
-				}
+			.swiper-hz {
+				align-self: center;
+			}
 
-				.swiper-container {
-					width: 85%;
-					height: 100%;
-				}
+			.swiper-parent {
+				width: 65%;
+				display: flex;
+				flex-direction: row;
+				margin: 0 auto;
+				margin-top: 80px;
+			}
 
-				.swiper-button-prev:after {
-					display: none;
-				}
+			.swiper-container {
+				width: 85%;
+				height: 100%;
+			}
 
-				.swiper-button-next:after {
-					display: none;
-				}
+			.swiper-button-prev:after {
+				display: none;
+			}
 
-				.swiper-button-prev {
-					position: relative;
-					width: 32px;
-					height: 32px;
-					background: url('./images/arrow_left_black.png') no-repeat center center;
-					background-size: contain;
-					align-self: center;
-					margin-top: 0px;
-					left: 0px;
-				}
+			.swiper-button-next:after {
+				display: none;
+			}
 
-				.swiper-button-next {
-					position: relative;
-					width: 32px;
-					height: 32px;
-					background: url('./images/arrow_right_black.png') no-repeat center center;
-					background-size: contain;
-					align-self: center;
-					margin-top: 0px;
-					right: 0px;
-				}
+			.swiper-button-prev {
+				position: relative;
+				width: 32px;
+				height: 32px;
+				background: url('./images/arrow_left_black.png') no-repeat center center;
+				background-size: contain;
+				align-self: center;
+				margin-top: 0px;
+				left: 0px;
+			}
 
-				.swiper-wrapper {
-					padding-left: 10px;
-					padding-right: 10px;
-				}
+			.swiper-button-next {
+				position: relative;
+				width: 32px;
+				height: 32px;
+				background: url('./images/arrow_right_black.png') no-repeat center center;
+				background-size: contain;
+				align-self: center;
+				margin-top: 0px;
+				right: 0px;
+			}
 
-				.swiper-slide {
-					color: #767676;
-					text-align: center;
-					align-self: center;
-					font-size: 16px;
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
-					-webkit-justify-content: center;
-					justify-content: center;
-					-webkit-box-align: center;
-					-ms-flex-align: center;
-					-webkit-align-items: center;
-					align-items: center;
-				}
+			.swiper-wrapper {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 
-				.swiper-slide-active {
-					color: #000;
-					font-size: 36px;
-				}
+			.swiper-slide {
+				color: #767676;
+				text-align: center;
+				align-self: center;
+				font-size: 16px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
 
-				.swiper-v .swiper-wrapper {
-					transition-delay: .3s;
-				}
+			.swiper-slide-active {
+				color: #000;
+				font-size: 36px;
+			}
 
-				.swiper-v {
-					height: 100px;
-					margin: 0px auto;
-					margin-top: 40px;
-					margin-bottom: 80px;
-					pointer-events: none;
-				}
+			.swiper-v .swiper-wrapper {
+				transition-delay: .3s;
+			}
 
-				.swiper-v .swiper-slide {
-					text-align: center;
-					font-size: 16px;
-					color: #3e3e3e;
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
-					-webkit-justify-content: center;
-					justify-content: center;
-					-webkit-box-align: center;
-					-ms-flex-align: center;
-					-webkit-align-items: center;
-					align-items: center;
-				}
+			.swiper-v {
+				height: 100px;
+				margin: 0px auto;
+				margin-top: 40px;
+				margin-bottom: 80px;
+				pointer-events: none;
+			}
 
-				.swiper-v .swiper-slide p {
-					transform: translateX(-100px);
-					opacity: 0;
-					transition: all .4s;
-				}
+			.swiper-v .swiper-slide {
+				text-align: center;
+				font-size: 16px;
+				color: #3e3e3e;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
 
-				.swiper-v .ani-slide p {
-					transform: translateX(0);
-					opacity: 1;
-				}
-			</style>
-			<div class="year-swiper">
-				<div class="swiper-parent">
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-container swiper-hz">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">1985</div>
-							<div class="swiper-slide">2000</div>
-							<div class="swiper-slide">2004</div>
-							<div class="swiper-slide">2009</div>
-							<div class="swiper-slide">2010</div>
-							<div class="swiper-slide">2015</div>
-							<div class="swiper-slide">2019</div>
-							<div class="swiper-slide">未来</div>
-						</div>
-					</div>
-					<div class="swiper-button-next"></div>
-				</div>
-				<div class="swiper-container swiper-v">
+			.swiper-v .swiper-slide p {
+				transform: translateX(-100px);
+				opacity: 0;
+				transition: all .4s;
+			}
+
+			.swiper-v .ani-slide p {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		</style>
+		<div class="year-swiper">
+			<div class="swiper-parent">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-container swiper-hz">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">羊绒原料的收储及销售业务的开展</div>
-						<div class="swiper-slide">德昇羊绒于呼和浩特正式成立<br />公司名称：内蒙古德升绒毛制品有限责任公司</div>
-						<div class="swiper-slide">上海办事处成立<br />用于开拓国内及国际市场</div>
-						<div class="swiper-slide">德昇第一个羊绒原料基地建立</div>
-						<div class="swiper-slide">日本分公司成立--中友国际贸易株式会社<br />用于开拓日韩等亚洲市场</div>
-						<div class="swiper-slide">北京品牌中心成立--北京上品优作网络科技有限公司<br />主要职能：产品研发、电子商务及国内市场开拓
-						</div>
-						<div class="swiper-slide">日本分公司推出高端原创品牌“Talmus”</div>
-						<div class="swiper-slide">《德之林》--我们翘首以盼</div>
+						<div class="swiper-slide">1985</div>
+						<div class="swiper-slide">2000</div>
+						<div class="swiper-slide">2004</div>
+						<div class="swiper-slide">2009</div>
+						<div class="swiper-slide">2010</div>
+						<div class="swiper-slide">2015</div>
+						<div class="swiper-slide">2019</div>
+						<div class="swiper-slide">未来</div>
 					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<div class="swiper-container swiper-v">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">羊绒原料的收储及销售业务的开展</div>
+					<div class="swiper-slide">德昇羊绒于呼和浩特正式成立<br />公司名称：内蒙古德升绒毛制品有限责任公司</div>
+					<div class="swiper-slide">上海办事处成立<br />用于开拓国内及国际市场</div>
+					<div class="swiper-slide">德昇第一个羊绒原料基地建立</div>
+					<div class="swiper-slide">日本分公司成立--中友国际贸易株式会社<br />用于开拓日韩等亚洲市场</div>
+					<div class="swiper-slide">北京品牌中心成立--北京上品优作网络科技有限公司<br />主要职能：产品研发、电子商务及国内市场开拓
+					</div>
+					<div class="swiper-slide">日本分公司推出高端原创品牌“Talmus”</div>
+					<div class="swiper-slide">《德之林》--我们翘首以盼</div>
 				</div>
 			</div>
-			<script>
-				var swiper = new Swiper('.swiper-hz', {
-					initialSlide: 3,
-					slidesPerView: 5,
-					paginationClickable: true,
-					spaceBetween: 30,
-					centeredSlides: true,
-					// loop: true,
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
+		</div>
+		<script>
+			var swiper = new Swiper('.swiper-hz', {
+				initialSlide: 3,
+				slidesPerView: 5,
+				paginationClickable: true,
+				spaceBetween: 30,
+				centeredSlides: true,
+				// loop: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				on: {
+					slideChangeTransitionStart: function () {
+						swiper_vertical && swiper_vertical.slideTo(this.realIndex);
 					},
-					on: {
-						slideChangeTransitionStart: function () {
-							swiper_vertical && swiper_vertical.slideTo(this.realIndex);
-						},
+				},
+			});
+			var swiper_vertical = new Swiper('.swiper-v', {
+				initialSlide: 3,
+				direction: 'vertical',
+				followFinger: false,
+				speed: 800,
+				mousewheel: true,
+				// loop: true,
+				allowTouchMove: false,
+				simulateTouch: false,
+				noSwiping: true,
+				noSwipingClass: 'stop',
+				pagination: {
+					el: '.swiper-pagination',
+				},
+				on: {
+					init: function (swiper) {
+						slide = this.slides.eq(0);
+						slide.addClass('ani-slide');
 					},
-				});
-				var swiper_vertical = new Swiper('.swiper-v', {
-					initialSlide: 3,
-					direction: 'vertical',
-					followFinger: false,
-					speed: 800,
-					mousewheel: true,
-					// loop: true,
-					allowTouchMove: false,
-					simulateTouch: false,
-					noSwiping: true,
-					noSwipingClass: 'stop',
-					pagination: {
-						el: '.swiper-pagination',
+					transitionStart: function () {
+						for (i = 0; i < this.slides.length; i++) {
+							slide = this.slides.eq(i);
+							slide.removeClass('ani-slide');
+						}
 					},
-					on: {
-						init: function (swiper) {
-							slide = this.slides.eq(0);
-							slide.addClass('ani-slide');
-						},
-						transitionStart: function () {
-							for (i = 0; i < this.slides.length; i++) {
-								slide = this.slides.eq(i);
-								slide.removeClass('ani-slide');
-							}
-						},
-						transitionEnd: function () {
-							slide = this.slides.eq(this.activeIndex);
-							slide.addClass('ani-slide');
+					transitionEnd: function () {
+						slide = this.slides.eq(this.activeIndex);
+						slide.addClass('ani-slide');
 
-						},
-					}
-				});
-			</script>
-			<!-- Swiper end -->
+					},
+				}
+			});
+		</script>
+		<!-- Swiper end -->
 
-		
+
 	</div>
 	<div class="about" id="yewu">
 		<div class="container">
@@ -379,23 +395,25 @@
 				<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
 			</div>
 			<div class="fenlei">
-				<img class="fenlei1" src="images/fenlei1.jpg" />
-				<img class="fenlei1" src="images/fenlei2.jpg" />
-				<img class="fenlei1" src="images/fenlei3.jpg" />
-				<img class="fenlei1 fenlei2" src="images/fenlei4.jpg" />
+				<a href="chanpin.html"><img class="fenlei1" src="images/fenlei1.jpg" /></a>
+				<a href="chanpin.html"><img class="fenlei1" src="images/fenlei2.jpg" /></a>
+				<a href="chanpin.html"><img class="fenlei1" src="images/fenlei3.jpg" /></a>
+				<a href="chanpin.html"><img class="fenlei1 fenlei2" src="images/fenlei4.jpg" /></a>
 			</div>
 			<div class="fenlei-more"></div>
 		</div>
 	</div>
-	<div class="about" id="hezuo">
-		<div class="container">
-			<div class="w3-heading-all">
-				<h3>合作客户</h3>
-				<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
+	<a name="hezuo">
+		<div class="about" id="hezuo">
+			<div class="container">
+				<div class="w3-heading-all">
+					<h3>合作客户</h3>
+					<div class="w3-heading-all-bottom"><img class="w3-heading-all-img" src="images/xian1.png" /></div>
+				</div>
+				<img class="hezuo" src="images/hezhuo1.png" alt="" />
 			</div>
-			<img class="hezuo" src="images/hezhuo1.png" alt="" />
 		</div>
-	</div>
+	</a>
 	<div class="about" id="qiye">
 		<div class="container">
 			<div class="w3-heading-all">
@@ -622,102 +640,6 @@
 	<!-- //testimonials -->
 
 
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
-							aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title"> Best Look</h4>
-				</div>
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/b1.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus
-							odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-							Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse
-							ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper. Cras tempor massa
-							luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed
-							finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
-							aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title"> Best Look</h4>
-				</div>
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/b2.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus
-							odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-							Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse
-							ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper. Cras tempor massa
-							luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed
-							finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal3" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
-							aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title"> Best Look</h4>
-				</div>
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/b3.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus
-							odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-							Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse
-							ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper. Cras tempor massa
-							luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed
-							finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal4" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
-							aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title"> Best Look</h4>
-				</div>
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/b4.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus
-							odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-							Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse
-							ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper. Cras tempor massa
-							luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed
-							finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
 	<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
 
 	<!-- js -->
@@ -730,6 +652,28 @@
 		</script> -->
 	<!-- carousal -->
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script type="text/javascript">
+		$(document).on('ready', function () {
+			console.log(1111);
+			let bridge = document.querySelector('#hezuo')
+			let body = document.body;
+			let height = 0;
+
+			// 计算该 DOM 节点到 body 顶部距离
+			do {
+				height += bridge.offsetTop;
+				bridge = bridge.offsetParent;
+			} while (bridge !== body)
+
+			// 滚动到指定位置
+			window.scrollTo({
+				top: height,
+				behavior: 'smooth'
+			})
+			console.log(height);
+		});
+
+	</script> -->
 	<script type="text/javascript">
 		$(document).on('ready', function () {
 			$(".center").slick({

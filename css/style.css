@@ -64,19 +64,18 @@ a:focus{
     padding:0 1.5em;
     text-transform: uppercase;
 }
-.navbar-default .navbar-nav > li > a:hover{
+/* .navbar-default .navbar-nav > li > a:hover{
     color:#f2184f;
-}
-.navbar-default .navbar-nav > li > a:focus {
+} */
+/* .navbar-default .navbar-nav > li > a:focus {
     color: #33cc99;
 	outline:none;
-}
+} */
 nav.navbar.navbar-default {
     background: none;
     padding:1em 0 0 0;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color:#33cc99;
     background: none;
 }
 .navbar-default .navbar-nav > li > a {
@@ -90,13 +89,8 @@ nav.navbar.navbar-default {
     color: #dca44b;
 }
 .navbar-brand {
-    padding: 0;
-    font-size:1em;
-    text-transform: uppercase;
-    letter-spacing:1px;
-    line-height:35px;
-    position: relative;
-    font-weight: 700;
+    width: 24vw;
+    object-fit: contain;
 }
 .navbar-brand span {
     color: #82b9e2;
@@ -120,14 +114,12 @@ p.logo_w3l_agile_caption {
 .agile_short_dropdown li a{
 	text-transform:uppercase;
 	color:#212121;
-	font-size:13px;
-	font-weight:600;
-	padding: .8em 0;
-}
-.agile_short_dropdown > li > a:hover{
-    color: #fff;
-    text-decoration: none;
-   background-color: #ef5734;
+	font-size: 1.05em;
+    line-height: 20px;
+	font-weight:400;
+	padding: 1.2em 0;
+    margin-left: 29vw;
+    width: 80px;
 }
 .header {
     padding: 1em 0em;
@@ -243,7 +235,7 @@ p.logo_w3l_agile_caption {
 	color:#dca44b;
 }
 
-.menu--iris .menu__link::before,
+/* .menu--iris .menu__link::before,
 .menu--iris .menu__link::after {
 	content: '';
 	position: absolute;
@@ -255,7 +247,7 @@ p.logo_w3l_agile_caption {
 	transition: transform 0.3s, opacity 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
 	transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-}
+} */
 
 .menu--iris .menu__link::before {
 	top: 0;
@@ -281,10 +273,37 @@ p.logo_w3l_agile_caption {
 }
 .dropdown-menu {
     position: absolute;
-    top: 226%;
     left: 0;
     z-index: 1000;
     display: none;
+    width: 78vw;
+    margin-left: 10vw;
+    translate: -49%;
+    margin-top: 5em;
+    padding: 20px 0px;
+    opacity: 0.8;
+}
+.qrcode {
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 8vw;
+    display: flex;
+    flex-direction: column;
+}
+.qrcode a {
+    text-transform:uppercase;
+	color:#212121;
+	font-size: 1.05em;
+    line-height: 20px;
+	font-weight:400;
+	padding: 1.2em 0;
+}
+.qrcode-img {
+    width: 7vw;
+    object-fit: contain;
 }
 /*-- //nav-effect --*/
 /*-- banner-text --*/ 
@@ -427,12 +446,12 @@ p.logo_w3l_agile_caption {
     flex-direction: row;
     margin-top: 20px;
 }
-.fenlei > img {
+.fenlei > a > img {
     transition-property: width;
     transition-duration: .25s, 1s;
     transition-timing-function: ease;
 }
-.fenlei > img.active {
+.fenlei > a > img.active {
     width: 608px;
 }
 .fenlei1 {
@@ -509,8 +528,8 @@ p.logo_w3l_agile_caption {
     flex-direction: row;
 }
 .yuanjing img {
-    width: 392px;
-    height: 285px;
+    width: 25vw;
+    object-fit: contain;
 }
 .yuanjing1 {
     margin-right: 40px;
@@ -535,7 +554,16 @@ p.logo_w3l_agile_caption {
 .about-grids {
     display: flex;
     flex-direction: row;
-    margin-left: 110px;
+    margin-left: 10vw;
+}
+.about-bg {
+    position: absolute;
+    z-index: -1;
+    padding-top: 5vw;
+}
+.about-bg-img {
+    width: 51vw;
+    object-fit: contain;
 }
 .about-left img {
     width: 100%;
@@ -2295,8 +2323,11 @@ button.btn1:hover i.fa.fa-paper-plane-o{
 @media(max-width:767px){
 	div#bs-example-navbar-collapse-1 {
     position: absolute;
-    width: 100%;
+    width: 45vw;
     z-index: 999;
+}
+.title-right {
+    width: 45vw;
 }
 .navbar-default .navbar-nav > li > a {
     width: 25%;

@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
-<title>Home</title>
+	<title>Home</title>
 	<!--/metadata -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //custom-theme -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/JiSlider.css" rel="stylesheet"> 
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- font-awesome-icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome-icons -->
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- //custom-theme -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/JiSlider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome-icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-<!-- header -->
-<div class="banner-top" id="home">
+	<!-- header -->
+	<div class="banner-top" id="home">
 
-	<div class="w3_navigation">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header navbar-left">
-					<img class="navbar-brand" href="index.html" src="images/icon1.png" alt="" />
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					<nav class="menu menu--iris">
-						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item"><a href="index.html" class="menu__link">公司简介</a></li>
-							<li class="menu__item"><a href="shizhuang.html" class="menu__link">时装发布</a></li>
-							<li class="menu__item menu__item--current"><a href="chanpin.html" class="menu__link">产品品类</a></li>
-							<li class="menu__item"><a href="lianxi.html" class="menu__link">合作客户</a></li>
-							<li class="menu__item"><a href="lianxi.html" class="menu__link">官方订阅</a></li>
-							<li class="menu__item"><a href="lianxi.html" class="menu__link">联系我们</a></li>
-						</ul>
-					</nav>
-				</div>
-			</nav>
+		<div class="w3_navigation">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<a href="index.html"><img class="navbar-brand" src="images/icon1.png" alt="" /></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<nav class="menu menu--iris">
+							<ul class="nav navbar-nav menu__list">
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">公司简介<b
+											class="caret"></b></a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li><a href="chejian.html">- 工厂车间</a></li>
+										<li><a href="gongyi.html">- 工艺设计</a></li>
+										<li><a href="jidi.html">- 原料基地</a></li>
+										<div class="qrcode">
+											<img class="qrcode-img" src="images/qrcode.png" />
+											<a>- 微信扫码订阅</a>
+										</div>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="shizhuang.html" class="menu__link">时装发布</a></li>
+								<li class="menu__item"><a href="chanpin.html" class="menu__link">产品品类</a></li>
+								<li class="menu__item"><a href="index.html#hezuo" class="menu__link">合作客户</a></li>
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">官方订阅<b
+											class="caret"></b></a>
+									<ul class="dropdown-menu agile_short_dropdown" style="translate: -93%;">
+										<li><a href="chejian.html">- 工厂车间</a></li>
+										<li><a href="gongyi.html">- 工艺设计</a></li>
+										<li><a href="jidi.html">- 原料基地</a></li>
+										<div class="qrcode">
+											<img class="qrcode-img" src="images/qrcode.png" />
+											<a>- 微信扫码订阅</a>
+										</div>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="lianxi.html" class="menu__link">联系我们</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
 
+			</div>
 		</div>
 	</div>
-</div>
-<div class="top-xian"><img class="top-xian-img" src="images/xian1.png" /></div>
-<div class="container">
-	<div class="shizhuang-container">
-		<div class="top-icon-chanpin"><img class="top-icon-img-chanpin" src="images/chanpin0.png" /></div>
-		<div class="shizhuang">
-			<img class="chanpin-item" src="images/chanpin_img_1.jpg" />
-			<!-- <div class="chanpin-item-parent">
+	<div class="top-xian"><img class="top-xian-img" src="images/xian1.png" /></div>
+	<div class="container">
+		<div class="shizhuang-container">
+			<div class="top-icon-chanpin"><img class="top-icon-img-chanpin" src="images/chanpin0.png" /></div>
+			<div class="shizhuang">
+				<img class="chanpin-item" src="images/chanpin_img_1.jpg" />
+				<!-- <div class="chanpin-item-parent">
 				<img class="chanpin-item-child" src="images/chanpin_img_2.jpg" />
 				<img class="chanpin-item-child" src="images/chanpin_img_3.jpg" />
 			</div>
@@ -60,123 +88,129 @@
 				<img class="chanpin-item-child" src="images/chanpin_img_4.jpg" />
 				<img class="chanpin-item-child" src="images/chanpin_img_5.jpg" />
 			</div> -->
-			<img class="chanpin-item" src="images/chanpin901.png" />
-			<img class="chanpin-item" src="images/chanpin902.png" />
-			<img class="chanpin-item chanpin-item-samll" src="images/chanpin_img_6.jpg" />
-		</div>
-		<div class="top-icon-chanpin001"><img class="top-icon-img-chanpin001" src="images/chanpin001.png" /></div>
-		<div class="shizhuang">
-			<img class="chanpin-item" src="images/chanpin_img_7.jpg" />
-			<img class="chanpin-item" src="images/chanpin_img_8.jpg" />
-			<img class="chanpin-item" src="images/chanpin_img_9.jpg" />
-		</div>
-		<div class="top-icon-chanpin001"><img class="top-icon-img-chanpin001" style="width: 495px;" src="images/chanpin002.png" /></div>
-		<div class="shizhuang">
-			<img class="chanpin-item" src="images/chanpin903.png" />
-			<img class="chanpin-item" src="images/chanpin_img_12.jpg" />
-		</div>
-		<div style="width: 100%; display: flex; flex-direction: column;">
-			<img class="chanpin-more" src="images/chanpin_more.png">
+				<img class="chanpin-item" src="images/chanpin901.png" />
+				<img class="chanpin-item" src="images/chanpin902.png" />
+				<img class="chanpin-item chanpin-item-samll" src="images/chanpin_img_6.jpg" />
+			</div>
+			<div class="top-icon-chanpin001"><img class="top-icon-img-chanpin001" src="images/chanpin001.png" /></div>
+			<div class="shizhuang">
+				<img class="chanpin-item" src="images/chanpin_img_7.jpg" />
+				<img class="chanpin-item" src="images/chanpin_img_8.jpg" />
+				<img class="chanpin-item" src="images/chanpin_img_9.jpg" />
+			</div>
+			<div class="top-icon-chanpin001"><img class="top-icon-img-chanpin001" style="width: 495px;"
+					src="images/chanpin002.png" /></div>
+			<div class="shizhuang">
+				<img class="chanpin-item" src="images/chanpin903.png" />
+				<img class="chanpin-item" src="images/chanpin_img_12.jpg" />
+			</div>
+			<div style="width: 100%; display: flex; flex-direction: column;">
+				<img class="chanpin-more" src="images/chanpin_more.png">
+			</div>
 		</div>
 	</div>
-</div>
-<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
-<style>
-	.chanpin-more {
-		width: 306px;
-		object-fit: contain;
-		margin-bottom: 40px;
-		align-self: center;
-	}
-	.shizhuang-container {
-		width: 72%;
-		margin: 0 auto;
-		margin-bottom: 100px;
-	}
+	<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
+	<style>
+		.chanpin-more {
+			width: 306px;
+			object-fit: contain;
+			margin-bottom: 40px;
+			align-self: center;
+		}
 
-	.shizhuang {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-	.chanpin-item-parent {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-	}
-	.chanpin-item-child {
-		width: 48%;
-		object-fit: contain;
-	}
-	.chanpin-item {
-		width: 100%;
-		object-fit: contain;
-		margin-bottom: 70px;
-	}
-	.chanpin-item-samll {
-		width: 50%;
-	}
-</style>
+		.shizhuang-container {
+			width: 72%;
+			margin: 0 auto;
+			margin-bottom: 100px;
+		}
+
+		.shizhuang {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.chanpin-item-parent {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+		}
+
+		.chanpin-item-child {
+			width: 48%;
+			object-fit: contain;
+		}
+
+		.chanpin-item {
+			width: 100%;
+			object-fit: contain;
+			margin-bottom: 70px;
+		}
+
+		.chanpin-item-samll {
+			width: 50%;
+		}
+	</style>
 	<!-- js -->
-<script src="js/jquery-2.1.4.min.js"></script> 
-<!-- <script src="js/JiSlider.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script src="js/JiSlider.js"></script>
 		<script>
 			$(window).load(function () {
 				$('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: false}).addClass('ff')
 			})
 		</script> -->
-<!-- carousal -->
+	<!-- carousal -->
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		$(document).on('ready', function() {
-		  $(".center").slick({
-			dots: true,
-			infinite: true,
-			centerMode: true,
-			slidesToShow: 2,
-			slidesToScroll: 2,
-			responsive: [
-				{
-				  breakpoint: 768,
-				  settings: {
-					arrows: true,
-					centerMode: false,
-					slidesToShow: 2
-				  }
-				},
-				{
-				  breakpoint: 480,
-				  settings: {
-					arrows: true,
-					centerMode: false,
-					centerPadding: '40px',
-					slidesToShow: 1
-				  }
-				}
-			 ]
-		  });
+		$(document).on('ready', function () {
+			$(".center").slick({
+				dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
 		});
 	</script>
-<!-- //carousal -->
+	<!-- //carousal -->
 	<!-- <script src="js/SmoothScroll.min.js"></script> -->
-<!-- start-smoth-scrolling -->
-<!-- //for bootstrap working -->
+	<!-- start-smoth-scrolling -->
+	<!-- //for bootstrap working -->
 
-<!-- start-smooth-scrolling -->
-<!-- <script type="text/javascript" src="js/move-top.js"></script> -->
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smooth-scrolling -->
-<!-- here stars scrolling icon -->
+	<!-- start-smooth-scrolling -->
+	<!-- <script type="text/javascript" src="js/move-top.js"></script> -->
+	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
 			/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -185,16 +219,17 @@
 				easingType: 'linear' 
 				};
 			*/
-								
+
 			// $().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+
+		});
 	</script>
-<!-- //here ends scrolling icon -->
+	<!-- //here ends scrolling icon -->
 
-<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
 
-	
+
 
 </body>
+
 </html>

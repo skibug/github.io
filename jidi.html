@@ -20,6 +20,8 @@
 	<link
 		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
 		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./swiper.min.css">
+	<script src="./swiper.min.js"></script>
 </head>
 
 <body>
@@ -73,79 +75,115 @@
 
 			</div>
 		</div>
-		<!-- //header -->
-		<!-- banner -->
-		<!-- <div class="banner-one">
-</div> -->
-		<!-- <div class="banner-silder">
-		<div id="JiSlider" class="jislider">
-			<ul>
-				<li>
-					<div class="w3layouts-banner-top">
-
-							<div class="container">
-								<div class="agileits-banner-info">
-								
-									<h3>WE ARE PROFESSIONAL DESIGNERS </h3>
-									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
-									
-								</div>	
-							</div>
-						</div>
-				</li>
-				<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top1">
-						<div class="container">
-								<div class="agileits-banner-info">
-								 
-									<h3>WE ARE EXPERIENCED  DESIGNERS</h3>
-									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
-									
-								</div>	
-							</div>
-						</div>
-				</li>
-				<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top2">
-							<div class="container">
-								<div class="agileits-banner-info">
-								    
-									<h3>WE ARE QUALITY  DESIGNERS</h3>
-									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
-									
-								</div>
-								
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top3">
-							<div class="container">
-								<div class="agileits-banner-info">
-								 
-									<h3>WE ARE FRIENDLY  DESIGNERS</h3>
-									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
-									
-								</div>
-								
-							</div>
-						</div>
-					</li>
-			</ul>
-		</div>
-      </div> -->
 	</div>
-	<!-- //banner -->
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<div class="top-xian"><img class="top-xian-img" src="images/xian1.png" /></div>
+	<div class="container">
+		<div class="shizhuang-container">
+			<img class="chanpin-item" src="images/jidi1.png" />
+		</div>
+	</div>
+	<div class="swiper-parent">
+		<div class="swiper-container swiper-hz">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img class="swiper-slide-img" src="images/yang1.jpg" /></div>
+				<div class="swiper-slide"><img class="swiper-slide-img" src="images/yang2.jpg" /></div>
+				<div class="swiper-slide"><img class="swiper-slide-img" src="images/yang3.jpg" /></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="shizhuang-container" style="margin-bottom: 140px;">
+			<img class="chanpin-item" style="margin-bottom: 4vw;" src="images/jidi2.png" />
+			<img class="chanpin-item-samll" src="images/jidi3.png" />
+			<img class="chanpin-item-samll" src="images/jidi4.png" />
+		</div>
+	</div>
+	<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
+	<style>
+		.swiper-parent {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			margin: 0 auto;
+		}
 
+		.swiper-hz {
+			align-self: center;
+		}
+
+		.swiper-container {
+			width: 100%;
+		}
+
+		.swiper-slide {
+			width: 100%;
+		}
+
+		.swiper-slide-img {
+			width: 100%;
+			object-fit: contain;
+		}
+
+		.chanpin-more {
+			width: 306px;
+			object-fit: contain;
+			margin-bottom: 40px;
+			align-self: center;
+		}
+
+		.shizhuang-container {
+			width: 85%;
+			margin: 0 auto;
+			margin-top: 6vw;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.shizhuang {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.chanpin-item-parent {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+		}
+
+		.chanpin-item-child {
+			width: 48%;
+			object-fit: contain;
+		}
+
+		.chanpin-item {
+			width: 100%;
+			object-fit: contain;
+			margin-bottom: 5vw;
+		}
+
+		.chanpin-item-samll {
+			width: 91%;
+			object-fit: contain;
+			margin-bottom: 3vw;
+			margin: 0 auto;
+		}
+	</style>
 	<!-- js -->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/JiSlider.js"></script>
 	<script>
-		$(window).load(function () {
-			$('#JiSlider').JiSlider({ color: '#fff', start: 3, reverse: false }).addClass('ff')
-		})
+		var swiper = new Swiper('.swiper-hz', {
+			centeredSlides: true,
+			loop: true,
+			autoplay: true,
+		});
 	</script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script src="js/JiSlider.js"></script>
+		<script>
+			$(window).load(function () {
+				$('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: false}).addClass('ff')
+			})
+		</script> -->
 	<!-- carousal -->
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
@@ -179,12 +217,12 @@
 		});
 	</script>
 	<!-- //carousal -->
-	<script src="js/SmoothScroll.min.js"></script>
+	<!-- <script src="js/SmoothScroll.min.js"></script> -->
 	<!-- start-smoth-scrolling -->
 	<!-- //for bootstrap working -->
 
 	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
+	<!-- <script type="text/javascript" src="js/move-top.js"></script> -->
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
@@ -207,7 +245,7 @@
 				};
 			*/
 
-			$().UItoTop({ easingType: 'easeOutQuart' });
+			// $().UItoTop({ easingType: 'easeOutQuart' });
 
 		});
 	</script>
