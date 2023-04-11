@@ -452,11 +452,11 @@ p.logo_w3l_agile_caption {
     transition-timing-function: ease;
 }
 .fenlei > a > img.active {
-    width: 608px;
+    width: 39vw;
 }
 .fenlei1 {
-    width: 180px;
-    height: 511px;
+    width: 12vw;
+    height: 33vw;
     object-fit: cover;
     margin-right: 12px;
 }
