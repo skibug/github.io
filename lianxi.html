@@ -38,25 +38,30 @@
 							<ul class="nav navbar-nav menu__list">
 								<li class="dropdown menu__item">
 									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">公司简介</a>
-									<ul class="dropdown-menu agile_short_dropdown">
-										<li><a href="chejian.html">- 工厂车间</a></li>
-										<li><a href="gongyi.html">- 工艺设计</a></li>
-										<li><a href="jidi.html">- 原料基地</a></li>
-										<div class="qrcode">
-											<img class="qrcode-img" src="images/qrcode.png" />
-											<a>- 微信扫码订阅</a>
-										</div>
+									<ul id="translateDiv" class="dropdown-menu agile_short_dropdown">
+										<li><a id="translateDivA" href="chejian.html">- 工厂车间</a></li>
+										<li><a id="translateDivB" href="gongyi.html">- 工艺设计</a></li>
+										<li><a id="translateDivC" href="jidi.html">- 原料基地</a></li>
 									</ul>
 								</li>
+								<script>
+									let translateValue = (window.outerWidth * 0.8 - 726);
+									let translateValue2 = translateValue + 11;
+									let translateDiv = document.getElementById("translateDiv");
+									translateDiv.style.translate = -translateValue + "px";
+									let translateDivA = document.getElementById("translateDivA");
+									translateDivA.style.marginLeft = translateValue2 + "px";
+									let translateDivB = document.getElementById("translateDivB");
+									translateDivB.style.marginLeft = translateValue2 + "px";
+									let translateDivC = document.getElementById("translateDivC");
+									translateDivC.style.marginLeft = translateValue2 + "px";
+								</script>
 								<li class="menu__item"><a href="shizhuang.html" class="menu__link">时装发布</a></li>
 								<li class="menu__item"><a href="chanpin.html" class="menu__link">产品品类</a></li>
 								<li class="menu__item"><a href="index.html#hezuo" class="menu__link">合作客户</a></li>
 								<li class="dropdown menu__item">
 									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">官方订阅</a>
-									<ul class="dropdown-menu agile_short_dropdown" style="translate: -93%;">
-										<li><a href="chejian.html">- 工厂车间</a></li>
-										<li><a href="gongyi.html">- 工艺设计</a></li>
-										<li><a href="jidi.html">- 原料基地</a></li>
+									<ul class="dropdown-menu dropdown-menu2 agile_short_dropdown">
 										<div class="qrcode">
 											<img class="qrcode-img" src="images/qrcode.png" />
 											<a>- 微信扫码订阅</a>

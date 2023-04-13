@@ -277,21 +277,28 @@ p.logo_w3l_agile_caption {
     z-index: 1000;
     display: none;
     width: 78vw;
-    margin-left: 10vw;
-    translate: -49%;
+    /* margin-left: 10vw; */
+    /* translate: -38%; */
     margin-top: 5em;
     padding: 20px 0px;
     opacity: 0.8;
 }
+.dropdown-menu2 {
+    width: 12vw; 
+    margin-left: 0px;
+    translate: -20%;
+    padding: 10px 0px;
+}
 .qrcode {
-    position: absolute;
+    /* position: absolute;
     z-index: 1001;
     top: 0;
-    right: 0;
+    left: 0; */
     margin-top: 30px;
-    margin-right: 8vw;
+    /* margin-right: 8vw; */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .qrcode a {
     text-transform:uppercase;
@@ -488,7 +495,7 @@ p.logo_w3l_agile_caption {
     margin-bottom: 4vw;
 }
 .top-icon-img-chanpin {
-    width: 27vw;
+    width: 22vw;
     object-fit: contain;
 }
 .top-icon-chanpin001 {
@@ -520,6 +527,7 @@ p.logo_w3l_agile_caption {
 .hezuo {
     width: 100%;
     margin-top: 20px;
+    object-fit: contain;
 }
 .yuanjing {
     width: 100%;
