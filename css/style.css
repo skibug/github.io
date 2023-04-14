@@ -89,7 +89,7 @@ nav.navbar.navbar-default {
     color: #dca44b;
 }
 .navbar-brand {
-    width: 24vw;
+    /* width: 24vw; */
     object-fit: contain;
 }
 .navbar-brand span {
