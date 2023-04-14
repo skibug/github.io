@@ -622,8 +622,8 @@ p.logo_w3l_agile_caption {
 }
 
 .lianxi-img {
-    width: 748px;
-    height: 864px;
+    width: 52vw;
+    object-fit: contain;
 }
 
 .w3-heading-all h3 {
