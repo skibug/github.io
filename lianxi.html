@@ -45,10 +45,10 @@
 									</ul>
 								</li>
 								<script>
-									let translateValue = (window.outerWidth * 0.8 - 726);
+									let translateValue = (window.innerWidth * 0.8 - 726);
 									let translateValue2 = translateValue + 11;
 									let translateDiv = document.getElementById("translateDiv");
-									translateDiv.style.translate = -translateValue + "px";
+									translateDiv.style.transform = "translate(-" + translateValue + "px)";
 									let translateDivA = document.getElementById("translateDivA");
 									translateDivA.style.marginLeft = translateValue2 + "px";
 									let translateDivB = document.getElementById("translateDivB");
@@ -71,9 +71,9 @@
 									</ul>
 								</li>
 								<script>
-									let translateQRValue = (window.outerWidth * 0.8 - 242);
+									let translateQRValue = (window.innerWidth * 0.8 - 242);
 									let translateQr = document.getElementById("translateQr");
-									translateQr.style.translate = -translateQRValue + "px";
+									translateQr.style.transform = "translate(-" + translateQRValue + "px)";
 								</script>
 								<li class="menu__item"><a href="lianxi.html" class="menu__link">联系我们</a></li>
 							</ul>

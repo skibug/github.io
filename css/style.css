@@ -337,7 +337,8 @@ p.logo_w3l_agile_caption {
     display: none;
     width: 78vw;
     /* margin-left: 10vw; */
-    /* translate: -38%; */
+    /* translate: 20%; */
+    /* transform: translate(100px); */
     margin-top: 5em;
     padding: 20px 0px;
     opacity: 0.8;
@@ -349,6 +350,7 @@ p.logo_w3l_agile_caption {
     translate: -20%;
     padding: 10px 0px;
 }
+
 .qrcode-parent {
     margin-top: 30px;
     margin-right: 100px;
@@ -356,6 +358,7 @@ p.logo_w3l_agile_caption {
     flex-direction: column;
     align-items: flex-end;
 }
+
 .qrcode {
     /* position: absolute;
     z-index: 1001;
@@ -631,9 +634,10 @@ p.logo_w3l_agile_caption {
 }
 
 .hezuo {
-    width: 100%;
+    width: 90%;
     margin-top: 20px;
     object-fit: contain;
+    margin: 0 auto;
 }
 
 .yuanjing {
