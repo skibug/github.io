@@ -923,10 +923,27 @@ if (typeof jQuery === 'undefined') {
   function dropdownOpen() {
 
     var $dropdownLi = $('li.dropdown');
+    // var $translateDiv = $('ul.dropdown-menu');
+    var clearClass;
 
     $dropdownLi.mouseover(function () {
+      clearTimeout(clearClass);
       $(this).addClass('open');
     });
+    $dropdownLi.mouseleave(function () {
+      clearClass = setTimeout(function () {
+        $dropdownLi.removeClass('open');
+      }, 100);
+    });
+    // $translateDiv.mouseleave(function () {
+    //   clearClass = setTimeout(function () {
+    //     $dropdownLi.removeClass('open');
+    //   }, 50);
+    // });
+    // $translateDiv.mouseover(function () {
+    //   clearTimeout(clearClass);
+    //   $(this).addClass('open');
+    // });
   }
 
 }(jQuery);
