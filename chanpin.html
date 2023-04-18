@@ -92,7 +92,7 @@
 				<img class="chanpin-item" src="images/chanpin1.png" style="margin-bottom: 6vw;" />
 				<img class="chanpin-item" id="yangrong" name="yangrong" src="images/chanpin2.png"
 					style="margin-bottom: 5vw;" />
-				<img class="chanpin-item" src="images/chanpin3.png" style="margin-bottom: 4vw;" />
+				<img class="chanpin-item" id="jiaju" name="jiaju" src="images/chanpin3.png" style="margin-bottom: 4vw;" />
 				<img class="chanpin-item" style="width: 27vw; margin-bottom: 6vw;" src="images/chanpin4.png" />
 				<img class="chanpin-item" src="images/chanpin5.png" style="margin-bottom: 4vw;" />
 				<img class="chanpin-item" src="images/chanpin6.png" style="margin-bottom: 4vw;" />
@@ -197,6 +197,26 @@
 					height += shouhui.offsetTop;
 					shouhui = shouhui.offsetParent;
 				} while (shouhui !== body)
+
+				setTimeout(function () {
+					// 滚动到指定位置
+					window.scrollTo({
+						top: height,
+						behavior: 'smooth'
+					})
+				}, 100);
+			}
+			let urlJiaju = location.href.indexOf('#jiaju');
+			if (urlJiaju != "-1") {
+				let jiaju = document.querySelector('#jiaju');
+				let body = document.body;
+				let height = 0;
+
+				// 计算该 DOM 节点到 body 顶部距离
+				do {
+					height += jiaju.offsetTop;
+					jiaju = jiaju.offsetParent;
+				} while (jiaju !== body)
 
 				setTimeout(function () {
 					// 滚动到指定位置
