@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Home</title>
+	<!--/metadata -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //custom-theme -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/JiSlider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome-icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="layui/css/layui.css">
+</head>
+
+<body>
+	<!-- header -->
+	<div class="banner-top" id="home">
+
+		<div class="w3_navigation">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<a href="index.html"><img class="navbar-brand" src="images/icon1.png" alt="" /></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<nav class="menu menu--iris">
+							<ul class="nav navbar-nav menu__list">
+								<li class="dropdown menu__item">
+									<a href="index.html" class="dropdown-toggle menu__link" data-toggle="dropdown">公司简介</a>
+									<ul id="translateDiv" class="dropdown-menu agile_short_dropdown">
+										<li><a id="translateDivA" href="chejian.html">- 工厂车间</a></li>
+										<li><a id="translateDivB" href="gongyi.html">- 工艺设计</a></li>
+										<li><a id="translateDivC" href="jidi.html">- 原料基地</a></li>
+									</ul>
+								</li>
+								<script>
+									let translateValue = (window.innerWidth * 0.8 - 726 - 121);
+									let translateValue2 = translateValue + 11;
+									let translateDiv = document.getElementById("translateDiv");
+									translateDiv.style.transform = "translate(-" + translateValue + "px)";
+									let translateDivA = document.getElementById("translateDivA");
+									translateDivA.style.marginLeft = translateValue2 + "px";
+									let translateDivB = document.getElementById("translateDivB");
+									translateDivB.style.marginLeft = translateValue2 + "px";
+									let translateDivC = document.getElementById("translateDivC");
+									translateDivC.style.marginLeft = translateValue2 + "px";
+								</script>
+								<li class="menu__item"><a href="shizhuang.html" class="menu__link">时装发布</a></li>
+								<li class="menu__item"><a href="chanpin.html" class="menu__link">产品品类</a></li>
+								<li class="menu__item"><a href="index.html#hezuo" class="menu__link">合作客户</a></li>
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">官方订阅</a>
+									<ul id="translateQr" class="dropdown-menu agile_short_dropdown">
+										<div class="qrcode-parent">
+											<div class="qrcode">
+												<img class="qrcode-img" src="images/qrcode.png" />
+												<a>- 微信扫码订阅</a>
+											</div>
+										</div>
+									</ul>
+								</li>
+								<script>
+									let translateQRValue = (window.innerWidth * 0.8 - 242 - 121);
+									let translateQr = document.getElementById("translateQr");
+									translateQr.style.transform = "translate(-" + translateQRValue + "px)";
+								</script>
+								<li class="menu__item"><a href="lianxi.html" class="menu__link">联系我们</a></li>
+								<li class="menu__item"><a href="shouhou.html" class="menu__link">售后服务</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- banner -->
+		<!-- <div class="banner-one">
+</div> -->
+		<!-- <div class="banner-silder">
+		<div id="JiSlider" class="jislider">
+			<ul>
+				<li>
+					<div class="w3layouts-banner-top">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								
+									<h3>WE ARE PROFESSIONAL DESIGNERS </h3>
+									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
+									
+								</div>	
+							</div>
+						</div>
+				</li>
+				<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
+						<div class="container">
+								<div class="agileits-banner-info">
+								 
+									<h3>WE ARE EXPERIENCED  DESIGNERS</h3>
+									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
+									
+								</div>	
+							</div>
+						</div>
+				</li>
+				<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+							<div class="container">
+								<div class="agileits-banner-info">
+								    
+									<h3>WE ARE QUALITY  DESIGNERS</h3>
+									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
+									
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top3">
+							<div class="container">
+								<div class="agileits-banner-info">
+								 
+									<h3>WE ARE FRIENDLY  DESIGNERS</h3>
+									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin dignissim.</p>
+									
+								</div>
+								
+							</div>
+						</div>
+					</li>
+			</ul>
+		</div>
+      </div> -->
+	</div>
+	<!-- //banner -->
+	<div class="top-xian"><img class="top-xian-img" src="images/xian1.png" /></div>
+	<div class="container">
+		<div class="shouhou">
+			<img class="shouhou-img" src="images/shouhou1.png" />
+			<div class="shouhou-left">
+				<div style="font-size: 30px; font-weight: 600; color: black;">AFTER-SALE SERVICE</div>
+				<div style="margin-top: 10px; font-size: 24px; font-weight: 600; color: black;">售后服务</div>
+				<div class="shouhou-call">
+					<div class="shouhou-call-item">
+						<a>24小时热线电话:</a>
+						<a style="margin-top: 5px;">0471-3250292</a>
+					</div>
+					<div class="shouhou-call-item">
+						<a>24小时售后服务电话:</a>
+						<a style="margin-top: 5px;">15124791230</a>
+					</div>
+					<div class="shouhou-call-item">
+						<a>24小时投诉电话:</a>
+						<a style="margin-top: 5px;">18104713322</a>
+					</div>
+				</div>
+				<div style="margin-top: 100px; font-size: 30px; font-weight: 600; color: black;">ONLINE SERVICE</div>
+				<div style="margin-top: 10px; font-size: 24px; font-weight: 600; color: black;">在线客服</div>
+				<img onclick="danchuan(this)" style="cursor:pointer; margin-top: 40px;" class="server-img" src="images/shouhou_server.png" />
+				<div onclick="danchuan(this)" style="cursor:pointer; margin-top: 10px; font-size: 18px; font-weight: 400; color: black;">点击可联系在线客服</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
+
+	<!-- js -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script src="js/JiSlider.js"></script>
+		<script>
+			$(window).load(function () {
+				$('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: false}).addClass('ff')
+			})
+		</script> -->
+	<!-- carousal -->
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function () {
+			$(".center").slick({
+				dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+	<!-- //carousal -->
+	<!-- <script src="js/SmoothScroll.min.js"></script> -->
+	<!-- start-smoth-scrolling -->
+	<!-- //for bootstrap working -->
+
+	<!-- start-smooth-scrolling -->
+	<!-- <script type="text/javascript" src="js/move-top.js"></script> -->
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			// $().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<script src="layui/layui.js"></script>
+	<script type="text/javascript">
+		function danchuan() {
+			var x = ($(window).width() * 0.6 - 20) + 'px';
+			var y = ($(window).height() * 0.2 - 20) + 'px';
+			layer.open({
+				type: 2,
+				title: '德昇客服',
+				shadeClose: true,
+				shade: 0.8,
+				area: ['40%', '80%'],
+				offset: [y, x], // 右下角弹出
+				content: 'kefu.html',
+				skin: 'layui-layer-lan'
+			});
+		}
+	</script>
+
+
+</body>
+
+</html>

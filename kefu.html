@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Home</title>
+	<!--/metadata -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //custom-theme -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/JiSlider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome-icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<style>
+		.kefu {
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.kefu-content {
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			background-color: #F6F6F6;
+			padding: 10px;
+			overflow: auto;
+		}
+		.item {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+		.item-right {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			margin-left: auto;
+		}
+		.item-a {
+			font-size: 12px;
+			color: black;
+			background-color: white;
+			border-radius: 2px;
+			padding: 8px 8px;
+		}
+		.item-title {
+			color: #C3C3C3;
+			font-size: 12px;
+			margin-bottom: 4px;
+		}
+		.item-title a {
+			color: #C3C3C3;
+			font-size: 12px;
+			margin-bottom: 4px;
+		}
+		.item-1 {
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			border-radius: 2px;
+			padding: 8px;
+		}
+		.item-1 a {
+			font-size: 12px;
+			color: blue;
+			margin-bottom: 4px;
+			cursor:pointer;
+		}
+		.item-2 {
+			font-size: 12px;
+			color: black;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+
+		.kefu-bottom {
+			height: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: end;
+			padding: 10px;
+		}
+		.kefu-input {
+			width: 100%;
+			height: auto;
+			flex: 1;
+			border:none
+		}
+
+		.kefu-bottom a {
+			width: 60px;
+			height: 26px;
+			line-height: 26px;
+			background-color: #3B71C5;
+			border-radius: 2px;
+			color: white;
+			font-size: 12px;
+			text-align: center;
+			cursor:pointer;
+		}
+	</style>
+	<!-- header -->
+	<div class="kefu">
+		<div class="kefu-content" id="kefu-content">
+			<div class="item" style="margin-top: auto;">
+				<div class="item-title">智能客服 <a id="title_time_1"></a></div>
+				<div class="item-1">
+					<div class="item-2">亲您好，我是【智能客服】，您可以点击您要提问的问题~</div>
+					<div style="border:0.5px solid #F6F6F6; margin-bottom: 4px;"></div>
+					<a onclick="appendView('1')">1.羊毛/羊绒产品洗护说明</a>
+					<a onclick="appendView('2')">2.羊毛/羊绒产品保养、存放说明</a>
+					<a onclick="appendView('3')">3.为什么羊绒羊毛	织物容易掉毛?</a>
+					<a onclick="appendView('4')">4.羊绒/羊毛起球正常吗？</a>
+					<!-- <a onclick="appendView(5)">5.其他问题</a> -->
+				</div>
+			</div>
+		</div>
+		<div class="kefu-bottom">
+			<input autocomplete="off" onkeydown='if(event.keyCode==13){sendQ.click()}' class="kefu-input" type="text" id="input_str" name="input_str" required minlength="1" maxlength="200" size="10">
+			<a id="sendQ" onclick="sendInput()">发送</a>
+		</div>
+	</div>
+	<!-- <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
+
+	<!-- js -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script src="js/JiSlider.js"></script>
+		<script>
+			$(window).load(function () {
+				$('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: false}).addClass('ff')
+			})
+		</script> -->
+	<!-- carousal -->
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function () {
+			$(".center").slick({
+				dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+	<!-- //carousal -->
+	<!-- <script src="js/SmoothScroll.min.js"></script> -->
+	<!-- start-smoth-scrolling -->
+	<!-- //for bootstrap working -->
+
+	<!-- start-smooth-scrolling -->
+	<!-- <script type="text/javascript" src="js/move-top.js"></script> -->
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		function sendInput() {
+			var str = document.getElementById('input_str').value;
+			document.getElementById('input_str').value = '';
+			appendView(str);
+
+		}
+		function appendView(input) {
+			var datetime = new Date();
+			var str = datetime.toTimeString(); //"10:55:24 GMT+0800 (中国标准时间)"
+        	var timeStr = str.substring(0,8); //  '10:55:24'
+
+			var item_right = document.createElement('div');
+			item_right.className = 'item-right';
+			var item_right_title = document.createElement('div');
+			item_right_title.className = 'item-title';
+			item_right_title.innerHTML = '我 ' + timeStr;
+			var a1 = document.createElement('div');
+			a1.className = 'item-a';
+			console.log(input);
+			var a1_text = input;
+			switch(input) {
+				case '1':
+				a1_text = '羊毛/羊绒产品洗护说明';
+					break;
+				case '2':
+				a1_text = '羊毛/羊绒产品保养、存放说明';
+					break;
+				case '3':
+				a1_text = '为什么羊绒羊毛织物容易掉毛?';
+					break;
+				case '4':
+				a1_text = '羊绒/羊毛起球正常吗？';
+					break;
+				// case 5:
+				// a1_text = '其他问题';
+				// 	break;
+				default:
+				a1_text = input;
+					break;
+			}
+			a1.innerHTML = a1_text;
+
+			item_right.appendChild(item_right_title);
+			item_right.appendChild(a1);
+			document.getElementById('kefu-content').appendChild(item_right);
+
+			var item = document.createElement('div');
+			item.className = 'item';
+
+			var item_title = document.createElement('div');
+			item_title.className = 'item-title';
+			item_title.innerHTML = '智能客服 ' + timeStr;
+
+			var a = document.createElement('div');
+			a.className = 'item-a';
+			switch(input) {
+				case '1':
+				a.innerHTML = '建议羊毛/羊绒产品送至专业干洗护理店清洗，<br>可延长产品寿命，维持产品良好形态。<br><br>水洗须知：<br>1.水温30-35℃，加入羊毛/羊绒专用洗涤剂（家用洗发液、中性洗涤剂皆可），<br>浸泡5-10分钟（如脏污严重，可适当延长浸泡时间）。<br>2.用手轻轻拍揉，清水洗2-3次。<br>3.轻拧将水挤出。<br>4.晾晒时需注意避免强光直射。切勿挂晾以免变形，可使用晾晒网兜平铺晾干。<br>5.低温蒸汽熨烫。<br><br>*本品出厂前已经特殊环保洗涤，首次佩戴无需清洗。';
+					break;
+				case '2':
+				a.innerHTML = '1.切忌大力拉扯，尽量避免与尖锐硬物等勾拉、接触，以免开洞破损。<br>2.叠好袋装/装盒平放。<br>3.蛋白质纤维易虫蛀，可放入樟脑丸或香樟木驱虫。';
+					break;
+				case '3':
+				a.innerHTML = '羊绒羊毛纤维相较其他纤维而言，长度较短，<br>当织物表面受到外力摩擦时，一些松散的纤维会逐渐脱离纱线主干，产生掉毛，<br>这是天然动物纤维不可避免的现象，<br>因此在使用中要注意尽量避免与尖锐硬物等勾拉、接触。';
+					break;
+				case '4':
+				a.innerHTML = '羊绒羊毛纤维呈自然卷曲状，容易交错缠绕在一起，轻微起球属于正常情况，<br>应注意减少外力摩擦，减轻起球掉毛程度。<br>在穿搭方式上，尽量减少与粗糙的面料接触摩擦。';
+					break;
+				case '5':
+				a.innerHTML = '您好，其他问题可联系24小时热线电话:0471-3250292。';
+					break;
+				default:
+				a.innerHTML = '您好，其他问题可联系24小时热线电话:0471-3250292。';
+					break;
+			}
+			
+			item.appendChild(item_title)
+			item.appendChild(a)
+
+			var kefu_content = document.getElementById('kefu-content');
+			kefu_content.appendChild(item);
+
+			kefu_content.scrollTop = kefu_content.scrollHeight;
+		}
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			// $().UItoTop({ easingType: 'easeOutQuart' });
+
+			var datetime = new Date();
+			var str = datetime.toTimeString(); //"10:55:24 GMT+0800 (中国标准时间)"
+        	var timeStr = str.substring(0,8); //  '10:55:24'
+			document.getElementById("title_time_1").textContent = timeStr
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+
+
+</body>
+
+</html>
