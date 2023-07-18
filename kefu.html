@@ -53,7 +53,7 @@
 			margin-left: auto;
 		}
 		.item-a {
-			font-size: 12px;
+			font-size: 14px;
 			color: black;
 			background-color: white;
 			border-radius: 2px;
@@ -61,12 +61,12 @@
 		}
 		.item-title {
 			color: #C3C3C3;
-			font-size: 12px;
+			font-size: 14px;
 			margin-bottom: 4px;
 		}
 		.item-title a {
 			color: #C3C3C3;
-			font-size: 12px;
+			font-size: 14px;
 			margin-bottom: 4px;
 		}
 		.item-1 {
@@ -77,13 +77,13 @@
 			padding: 8px;
 		}
 		.item-1 a {
-			font-size: 12px;
+			font-size: 14px;
 			color: blue;
 			margin-bottom: 4px;
 			cursor:pointer;
 		}
 		.item-2 {
-			font-size: 12px;
+			font-size: 14px;
 			color: black;
 			margin-top: 4px;
 			margin-bottom: 4px;
@@ -128,7 +128,7 @@
 					<a onclick="appendView('2')">2.羊毛/羊绒产品保养、存放说明</a>
 					<a onclick="appendView('3')">3.为什么羊绒羊毛	织物容易掉毛?</a>
 					<a onclick="appendView('4')">4.羊绒/羊毛起球正常吗？</a>
-					<!-- <a onclick="appendView(5)">5.其他问题</a> -->
+					<a onclick="appendView('5')">5.其他问题</a>
 				</div>
 			</div>
 		</div>
@@ -231,9 +231,9 @@
 				case '4':
 				a1_text = '羊绒/羊毛起球正常吗？';
 					break;
-				// case 5:
-				// a1_text = '其他问题';
-				// 	break;
+				case '5':
+				a1_text = '其他问题';
+					break;
 				default:
 				a1_text = input;
 					break;
